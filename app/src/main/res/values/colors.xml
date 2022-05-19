@@ -8,9 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <color name="Primary">#006B57</color>
-    <color name="Secondary">#4B635C</color>
-    <color name="Tertiary">#426277</color>
+    <color name="color_primary" tools:ignore="PrivateResource">#006B57</color>
+    <color name="color_secondary">#4B635C</color>
+    <color name="color_tertiary">#426277</color>
     <color name="Error">#BA1B1B</color>
     <color name="Error40">#BA1B1B</color>
     <color name="Error100">#FFFFFF</color>
@@ -20,6 +20,6 @@
     <color name="Error90">#FFDAD4</color>
     <color name="Error990">#410001</color>
     <color name="Error10">#410001</color>
-    <color name="Neutral">#5C5F5D</color>
-    <color name="Neutral_Variant">#605D66</color>
+    <color name="color_neutral">#5C5F5D</color>
+    <color name="color_neutral_variant">#605D66</color>
 </resources>
