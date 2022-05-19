@@ -36,6 +36,13 @@ android {
     buildFeatures {
         viewBinding true
     }
+    
+    allprojects {
+        repositories {
+            google()
+            mavenCentral()
+        }
+    }
 }
 
 dependencies {
