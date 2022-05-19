@@ -37,12 +37,6 @@ android {
         viewBinding true
     }
     
-    allprojects {
-        repositories {
-            google()
-            mavenCentral()
-        }
-    }
 }
 
 dependencies {
