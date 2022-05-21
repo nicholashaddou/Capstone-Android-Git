@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Play Lab</string>
+    
+    <string name="name_aplication">PLAY lab</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+
+    <string name="welcome_info">Play Lab adalah aplikasi xxxxxxxx yang telah mendapatkan lisensi dari Kemendikbud untuk mengadakan pelatihan atau kursus tentang komputer Akuntansi sekaligus menyediakan aplikasi untuk dipergunakan sebagaimana mestinya dengan cara berlangganan. Anda mendapatkan course Accounting, Anda pun mendapatkan aplikasinya.</string>
+    <string name="register_or_login">Resgister sekarang atau log in.</string>
+    <string name="welcome_course_1">Course 1</string>
+    <string name="welcome_course_2">Course 2</string>
+    <string name="welcome_course_3">Course 3</string>
+    <string name="welcome_course_4">Course 4</string>
+
+    <string name="register_here">Register here</string>
+    <string name="register_username">Username</string>
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="account_already">Already have an account?</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_new_here">New here? Register now</string>
+
+    <string name="button_register">Register</string>
+    <string name="button_login">Log in</string>
+
+    <string name="copyright_bottom">version 1.0\n &#169; Bangkit Academy 2022 - Capstone C22-PS175</string>
 </resources>
