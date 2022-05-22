@@ -8,9 +8,36 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <color name="brand_primary" tools:ignore="PrivateResource">#006B57</color>
-    <color name="brand_secondary">#4B635C</color>
-    <color name="brand_tertiary">#426277</color>
+    <color name="capstone_primary">#006B57</color>
+    <color name="capstone_primary_40">#006B57</color>
+    <color name="capstone_primary_100">#FFFFFF</color>
+    <color name="capstone_primary_90">#7BF8D9</color>
+    <color name="capstone_primary_10">#002019</color>
+    <color name="capstone_primary_80">#006B57</color>
+    <color name="capstone_primary_20">#FFFFFF</color>
+    <color name="capstone_primary_30">#7BF8D9</color>
+    <color name="capstone_primary_990">#002019</color>
+
+    <color name="capstone_secondary">#4B635C</color>
+    <color name="capstone_secondary_40">#4B635C</color>
+    <color name="capstone_secondary_100">#FFFFFF</color>
+    <color name="capstone_secondary_90">#CDE8DE</color>
+    <color name="capstone_secondary_10">#081F1A</color>
+    <color name="capstone_secondary_80">#4B635C</color>
+    <color name="capstone_secondary_20">#FFFFFF</color>
+    <color name="capstone_secondary_30">#CDE8DE</color>
+    <color name="capstone_secondary_990">#081F1A</color>
+
+    <color name="capstone_tertiary">#426277</color>
+    <color name="capstone_tertiary_40">#426277</color>
+    <color name="capstone_tertiary_100">#FFFFFF</color>
+    <color name="capstone_tertiary_90">#C6E7FF</color>
+    <color name="capstone_tertiary_10">#001E2E</color>
+    <color name="capstone_tertiary_80">#426277</color>
+    <color name="capstone_tertiary_20">#FFFFFF</color>
+    <color name="capstone_tertiary_30">#C6E7FF</color>
+    <color name="capstone_tertiary_990">#001E2E</color>
+    
     <color name="Error">#BA1B1B</color>
     <color name="Error40">#BA1B1B</color>
     <color name="Error100">#FFFFFF</color>
@@ -20,6 +47,19 @@
     <color name="Error90">#FFDAD4</color>
     <color name="Error990">#410001</color>
     <color name="Error10">#410001</color>
-    <color name="brand_neutral">#5C5F5D</color>
-    <color name="brand_neutral_variant">#605D66</color>
+    
+    <color name="capstone_neutral">#5C5F5D</color>
+    <color name="capstone_neutral_99">#FAFDFA</color>
+    <color name="capstone_neutral_10">#191C1B</color>
+    <color name="capstone_neutral_110">#FAFDFA</color>
+    <color name="capstone_neutral_90">#191C1B</color>
+    <color name="capstone_neutral_80">#191C1B</color>
+
+    <color name="capstone_neutral_variant">#605D66</color>
+    <color name="capstone_neutral_variant_90">#DBE5E0</color>
+    <color name="capstone_neutral_variant_30">#3F4945</color>
+    <color name="capstone_neutral_variant_50">#6F7975</color>
+    <color name="capstone_neutral_variant_330">#DBE5E0</color>
+    <color name="capstone_neutral_variant_80">#3F4945</color>
+    <color name="capstone_neutral_variant_60">#6F7975</color>
 </resources>
