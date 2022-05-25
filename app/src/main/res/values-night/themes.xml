@@ -2,13 +2,33 @@
     <!-- Base application theme. -->
     <style name="Theme.PlayLab" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/capstone_primary_80</item>
+        <item name="colorOnPrimary">@color/capstone_primary_20</item>
+        <item name="colorPrimaryContainer">@color/capstone_primary_30</item>
+        <item name="colorOnPrimaryContainer">@color/capstone_primary_90</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/capstone_secondary_80</item>
+        <item name="colorOnSecondary">@color/capstone_secondary_20</item>
+        <item name="colorSecondaryContainer">@color/capstone_secondary_30</item>
+        <item name="colorOnSecondaryContainer">@color/capstone_secondary_90</item>
+        <!--- Tertiary Color -->
+        <item name="colorTertiary">@color/capstone_tertiary_80</item>
+        <item name="colorOnTertiary">@color/capstone_tertiary_20</item>
+        <item name="colorTertiaryContainer">@color/capstone_tertiary_30</item>
+        <item name="colorOnTertiaryContainer">@color/capstone_tertiary_90</item>
+        <!--- Error Color -->
+        <item name="colorError">@color/Error80</item>
+        <item name="colorOnError">@color/Error20</item>
+        <item name="colorErrorContainer">@color/Error30</item>
+        <item name="colorOnErrorContainer">@color/Error990</item>
+        <!--- Surface Color -->
+        <item name="colorSurface">@color/capstone_neutral_10</item>
+        <item name="colorOnSurface">@color/capstone_neutral_80</item>
+        <item name="colorSurfaceVariant">@color/capstone_neutral_variant_30</item>
+        <item name="colorOnSurfaceVariant">@color/capstone_neutral_variant_80</item>
+        <item name="android:colorBackground">@color/capstone_neutral_10</item>
+        <item name="colorOnBackground">@color/capstone_neutral_90</item>
+        <item name="colorOutline">@color/capstone_neutral_variant_60</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
