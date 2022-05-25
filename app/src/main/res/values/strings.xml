@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Play Lab</string>
-    
+
     <string name="name_aplication">PLAY lab</string>
     <string name="register">Register</string>
     <string name="log_in">Log in</string>
@@ -12,6 +12,7 @@
     <string name="welcome_course_3">Course 3</string>
     <string name="welcome_course_4">Course 4</string>
 
+    <string name="message_login_page">Masukkan data dulu</string>
     <string name="register_here">Register here</string>
     <string name="register_username">Username</string>
     <string name="register_email">Email</string>
@@ -25,4 +26,5 @@
     <string name="button_login">Log in</string>
 
     <string name="copyright_bottom">version 1.0\n &#169; Bangkit Academy 2022 - Capstone C22-PS175</string>
+
 </resources>
