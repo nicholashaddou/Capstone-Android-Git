@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.c22ps175.playlab.ui.login.LoginViewModel
 import com.c22ps175.playlab.ui.signup.SignupViewModel
-import com.dicoding.picodiploma.loginwithanimation.model.UserPreference
+import com.c22ps175.playlab.ui.model.UserPreference
 
 class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.NewInstanceFactory() {
 
