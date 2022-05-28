@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.model
+package com.c22ps175.playlab.ui.model
 
 data class UserModel(
     val name: String,
