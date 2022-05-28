@@ -1,8 +1,12 @@
 package com.c22ps175.playlab.ui.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class UserModel(
-    val name: String,
-    val email: String,
-    val password: String,
-    val isLogin: Boolean
-)
+    var name: String,
+    var email: String,
+    var password: String,
+    var isLogin: Boolean
+): Parcelable
