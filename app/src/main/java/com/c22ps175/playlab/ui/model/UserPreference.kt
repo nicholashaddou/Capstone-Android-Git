@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.model
+package com.c22ps175.playlab.ui.model
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
