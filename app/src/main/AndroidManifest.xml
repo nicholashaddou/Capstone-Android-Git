@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.c22ps175.playlab">
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlayLab"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.course.CourseListActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.signup.SignupActivity"
             android:exported="false" />

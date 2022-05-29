@@ -35,5 +35,8 @@
 
     //string copyright
     <string name="copyright_bottom">version 1.0\n &#169; Bangkit Academy 2022 - Capstone C22-PS175</string>
+    <string name="search_hint">Search</string>
+    <string name="search_button">Search Button</string>
+    <string name="avatar_desc">Avatar</string>
 
 </resources>
