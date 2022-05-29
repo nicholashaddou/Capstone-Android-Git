@@ -1,4 +1,4 @@
-package com.c22ps175.playlab.ui.database
+package com.c22ps175.playlab.api
 
 import android.os.Build
 import androidx.viewbinding.BuildConfig
@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ApiConfig {
 
     companion object {
-        fun getGithubApi(): PlaylabApi {
+        fun getGithubApi(): GamelabApi {
             val loggingInterceptor = if (BuildConfig.DEBUG) {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
             } else {
