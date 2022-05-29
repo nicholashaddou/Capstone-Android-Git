@@ -1,4 +1,4 @@
-package com.c22ps175.playlab.ui.database.response
+package com.c22ps175.playlab.database.response
 
 data class LoginResult(
     val userId: String,
