@@ -4,15 +4,227 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/image_welcome"
+        android:layout_width="361dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description_slide"
+        android:src="@drawable/slide4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button_welcome_play"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="@string/name_application_1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/image_welcome"
+        app:layout_constraintTop_toBottomOf="@id/image_welcome" />
+
+    <Button
+        android:id="@+id/button_welcome_lab"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="@string/name_application_2"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_welcome"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/image_welcome" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="210dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/welcome_info"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/button_welcome_play" />
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_register"
+        app:layout_constraintEnd_toEndOf="@id/button_welcome_lab"
+        app:layout_constraintStart_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toTopOf="@id/welcome_message" />
+
+    <Button
+        android:id="@+id/button_log_in"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_login"
+        app:layout_constraintEnd_toEndOf="@+id/button_sign_up"
+        app:layout_constraintStart_toStartOf="@+id/button_sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_up" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="218dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="259dp" />
+
+    <TextView
+        android:id="@+id/register_or_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/register_or_login"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/image_welcome"
+        app:layout_constraintTop_toBottomOf="@id/welcome_message" />
+
+    <ImageView
+        android:id="@+id/image_spotlight"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/description_spotlight"
+        android:src="@drawable/ui_ux_welcome_kecil"
+        app:layout_constraintEnd_toEndOf="@id/image_welcome"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/button_log_in"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/welcome_course_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/welcome_course_1"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/welcome_course_1_image"
+        app:layout_constraintEnd_toEndOf="@id/welcome_course_1_image"
+        app:layout_constraintTop_toBottomOf="@id/image_spotlight" />
+
+    <TextView
+        android:id="@+id/welcome_course_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_course_2"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/welcome_course_2_image"
+        app:layout_constraintEnd_toEndOf="@id/welcome_course_2_image"
+        app:layout_constraintTop_toTopOf="@id/welcome_course_1"/>
+
+    <TextView
+        android:id="@+id/welcome_course_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_course_3"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/welcome_course_3_image"
+        app:layout_constraintEnd_toEndOf="@id/welcome_course_3_image"
+        app:layout_constraintTop_toTopOf="@id/welcome_course_1"/>
+
+    <TextView
+        android:id="@+id/welcome_course_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_course_4"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/welcome_course_4_image"
+        app:layout_constraintEnd_toEndOf="@id/welcome_course_4_image"
+        app:layout_constraintTop_toTopOf="@id/welcome_course_1"/>
+
+    <ImageView
+        android:id="@+id/welcome_course_1_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description_course"
+        android:src="@drawable/ui_ux_welcome_kecil"
+        app:layout_constraintStart_toStartOf="@id/image_welcome"
+        app:layout_constraintTop_toBottomOf="@id/welcome_course_1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/welcome_course_2_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description_course"
+        android:src="@drawable/ui_ux_welcome_kecil"
+        app:layout_constraintStart_toEndOf="@id/welcome_course_1_image"
+        app:layout_constraintTop_toBottomOf="@id/welcome_course_2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/welcome_course_3_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description_course"
+        android:src="@drawable/ui_ux_welcome_kecil"
+        app:layout_constraintStart_toEndOf="@id/welcome_course_2_image"
+        app:layout_constraintTop_toBottomOf="@id/welcome_course_3"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/welcome_course_4_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description_course"
+        android:src="@drawable/ui_ux_welcome_kecil"
+        app:layout_constraintEnd_toEndOf="@id/image_welcome"
+        app:layout_constraintStart_toEndOf="@id/welcome_course_3_image"
+        app:layout_constraintTop_toBottomOf="@id/welcome_course_4"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/copyright_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright_bottom"
+        android:gravity="center"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_course_1_image"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
