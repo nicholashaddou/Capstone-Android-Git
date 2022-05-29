@@ -3,8 +3,8 @@
     <string name="app_name">Play Lab</string>
 
     //String pada Welcome Screen Landing Page
-    <string name="name_aplication">PLAY lab</string>
-    <string name="name_application_1">PLAY</string>
+    <string name="name_aplication">GameLab</string>
+    <string name="name_application_1">GAME</string>
     <string name="name_application_2">Lab</string>
     <string name="register">Register</string>
     <string name="log_in">Log in</string>
@@ -32,11 +32,13 @@
 
     <string name="button_register">Register</string>
     <string name="button_login">Log in</string>
-
-    //string copyright
-    <string name="copyright_bottom">version 1.0\n &#169; Bangkit Academy 2022 - Capstone C22-PS175</string>
+    
+    //String untuk artikel dan search
     <string name="search_hint">Search</string>
     <string name="search_button">Search Button</string>
     <string name="avatar_desc">Avatar</string>
+
+    //string copyright
+    <string name="copyright_bottom">version 1.0\n &#169; Bangkit Academy 2022 - Capstone C22-PS175</string>
 
 </resources>
