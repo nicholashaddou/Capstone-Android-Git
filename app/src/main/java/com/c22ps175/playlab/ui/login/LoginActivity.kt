@@ -33,6 +33,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            title = resources.getString(R.string.login_activity)
+        }
 
         setupView()
         setupViewModel()
@@ -50,7 +55,6 @@ class LoginActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {

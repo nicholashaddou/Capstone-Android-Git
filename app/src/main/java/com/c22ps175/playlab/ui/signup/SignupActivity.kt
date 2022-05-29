@@ -30,6 +30,11 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            title = resources.getString(R.string.signup_activity)
+        }
 
         setupView()
         setupViewModel()
@@ -47,7 +52,6 @@ class SignupActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {
