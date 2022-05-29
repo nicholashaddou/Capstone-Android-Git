@@ -1,6 +1,6 @@
 <resources>
     //Nama Aplikasi
-    <string name="app_name">Play Lab</string>
+    <string name="app_name">GameLab</string>
 
     //String pada Welcome Screen Landing Page
     <string name="name_aplication">GameLab</string>
@@ -12,7 +12,7 @@
     <string name="description_spotlight">spotlight</string>
     <string name="description_course">Course</string>
 
-    <string name="welcome_info">Play Lab adalah aplikasi xxxxxxxx yang telah mendapatkan lisensi dari Kemendikbud untuk mengadakan pelatihan atau kursus tentang komputer Akuntansi sekaligus menyediakan aplikasi untuk dipergunakan sebagaimana mestinya dengan cara berlangganan. Anda mendapatkan course Accounting, Anda pun mendapatkan aplikasinya.</string>
+    <string name="welcome_info">GameLab adalah aplikasi xxxxxxxx yang telah mendapatkan lisensi dari Kemendikbud untuk mengadakan pelatihan atau kursus tentang komputer Akuntansi sekaligus menyediakan aplikasi untuk dipergunakan sebagaimana mestinya dengan cara berlangganan. Anda mendapatkan course Accounting, Anda pun mendapatkan aplikasinya.</string>
     <string name="register_or_login">Resgister sekarang atau log in.</string>
     <string name="welcome_course_1">Course 1</string>
     <string name="welcome_course_2">Course 2</string>
