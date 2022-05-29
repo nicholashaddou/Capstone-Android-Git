@@ -1,6 +1,6 @@
 package com.c22ps175.playlab.ui.database
 
-import com.c22ps175.playlab.ui.database.response.ResponseSementara
+import com.c22ps175.playlab.database.response.ResponseSementara
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers
