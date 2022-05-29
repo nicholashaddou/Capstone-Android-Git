@@ -1,4 +1,4 @@
-package com.c22ps175.playlab.ui.database
+package com.c22ps175.playlab.database
 
 import com.c22ps175.playlab.database.response.ResponseSementara
 import retrofit2.Call
