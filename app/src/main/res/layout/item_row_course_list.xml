@@ -39,9 +39,24 @@
             android:textStyle="bold"
             card_view:layout_constraintBottom_toBottomOf="@+id/iv_item_photo"
             card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="0.056"
+            card_view:layout_constraintHorizontal_bias="0.053"
             card_view:layout_constraintStart_toEndOf="@+id/iv_item_photo"
             card_view:layout_constraintTop_toTopOf="@+id/iv_item_photo"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_username2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle=""
+            card_view:layout_constraintBottom_toBottomOf="@+id/iv_item_photo"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.053"
+            card_view:layout_constraintStart_toEndOf="@+id/iv_item_photo"
+            card_view:layout_constraintTop_toTopOf="@+id/iv_item_photo"
+            card_view:layout_constraintVertical_bias="0.774"
             tools:text="TextView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
