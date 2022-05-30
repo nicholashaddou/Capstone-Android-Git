@@ -15,12 +15,12 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.c22ps175.playlab.MainActivity
+import com.c22ps175.playlab.ui.main.MainActivity
 import com.c22ps175.playlab.R
 import com.c22ps175.playlab.databinding.ActivityLoginBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
-import com.dicoding.picodiploma.loginwithanimation.model.UserModel
-import com.dicoding.picodiploma.loginwithanimation.model.UserPreference
+import com.c22ps175.playlab.ui.model.UserModel
+import com.c22ps175.playlab.ui.model.UserPreference
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -33,6 +33,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            title = resources.getString(R.string.login_activity)
+        }
 
         setupView()
         setupViewModel()
@@ -50,7 +55,6 @@ class LoginActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {

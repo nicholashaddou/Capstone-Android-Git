@@ -17,8 +17,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.c22ps175.playlab.R
 import com.c22ps175.playlab.databinding.ActivitySignupBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
-import com.dicoding.picodiploma.loginwithanimation.model.UserModel
-import com.dicoding.picodiploma.loginwithanimation.model.UserPreference
+import com.c22ps175.playlab.ui.model.UserModel
+import com.c22ps175.playlab.ui.model.UserPreference
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -30,6 +30,11 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            title = resources.getString(R.string.signup_activity)
+        }
 
         setupView()
         setupViewModel()
@@ -47,7 +52,6 @@ class SignupActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {

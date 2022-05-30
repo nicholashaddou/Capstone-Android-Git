@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.c22ps175.playlab">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,6 +16,13 @@
         android:theme="@style/Theme.PlayLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard" />
+        <activity
+            android:name=".ui.course.CourseListActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.signup.SignupActivity"
             android:exported="false" />
         <activity
@@ -23,7 +32,7 @@
             android:name=".ui.welcome.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
