@@ -9,6 +9,8 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.c22ps175.playlab.data.CourseData
 import com.c22ps175.playlab.databinding.ItemRowCourseListBinding
 
+//Kalau kita mau pakai course dari API kita pakai ini, kalau coursenya mau kita hardcode secara manual berarti ini kita adaptasikan untuk show course dari device saja
+
 class CourseListAdapter : RecyclerView.Adapter<CourseListAdapter.ViewHolder>() {
 
     private val list = ArrayList<CourseData>()
