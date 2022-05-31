@@ -30,7 +30,12 @@
     <string name="login_password">Password</string>
     <string name="login_new_here">New here? Register now</string>
     <string name="login_activity">Log in</string>
-    <string name="signup_activity">Sign Up</string>
+    <string name="requires_name">Nama harus diisi</string>
+    <string name="requires_email">Email harus diisi</string>
+    <string name="requires_password">Password harus diisi</string>
+    <string name="password_error">Password kurang dari 6 karakter</string>
+    <string name="sign_in">Sign in</string>
+
 
     <string name="button_register">Register</string>
     <string name="button_login">Log in</string>
@@ -46,5 +51,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="sudah_memiliki_akun">Sudah memiliki akun?</string>
 
 </resources>

@@ -6,16 +6,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.c22ps175.playlab.R
 import com.c22ps175.playlab.databinding.ActivitySignupBinding
 import com.c22ps175.playlab.ui.login.LoginActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
-//Ingat untuk hapus comments ketika layout sudah dibenarkan
 
 class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
@@ -32,15 +33,14 @@ class SignupActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        //Untuk set masuk
-        /*binding.masuk.setOnClickListener {
+        binding.masuk.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
-        }*/
+        }
 
-        //validateRegister()
+        validateRegister()
     }
 
-    /*private fun validateRegister(){
+    private fun validateRegister(){
         signupViewModel.isLoading.observe(this) {
             isLoading(it)
             isLoadingIntent(it)
@@ -55,25 +55,25 @@ class SignupActivity : AppCompatActivity() {
         }
 
         signupViewModel.isEmailEmpty.observe(this) {
-            if (it) binding.etEmail.error = getString(R.string.requires_email)
+            if (it) binding.emailEditText.error = getString(R.string.requires_email)
         }
 
         signupViewModel.isPasswordEmpty.observe(this) {
-            if (it) binding.etPassword.error = getString(R.string.requires_password)
+            if (it) binding.passwordEditText.error = getString(R.string.requires_password)
         }
 
         signupViewModel.isPasswordValid.observe(this) {
-            if (!it) binding.etPassword.error = getString(R.string.password_error) else binding.etEmail.error =
+            if (!it) binding.passwordEditText.error = getString(R.string.password_error) else binding.emailEditText.error =
                 null
         }
-    }*/
+    }
 
     private fun setupAction() {
         binding.signupButton.setOnClickListener {
-//            val name = binding.nameEditTextLayout.text.toString()
-//            val email = binding.etEmail.text.toString()
-//            val password = binding.etPassword.text.toString()
-//            signupViewModel.signUp(this,name,email,password)
+            val name = binding.nameEditText.text.toString()
+            val email = binding.emailEditText.text.toString()
+            val password = binding.passwordEditText.text.toString()
+            signupViewModel.signUp(this,name,email,password)
 
         }
     }
@@ -81,10 +81,10 @@ class SignupActivity : AppCompatActivity() {
     private fun isLoading(value:Boolean){
         if (value){
             binding.signupButton.isEnabled = false
-            //binding.pgSignup.visibility = View.VISIBLE
+            binding.pgSignup.visibility = View.VISIBLE
         }else{
             binding.signupButton.isEnabled = true
-            //binding.pgSignup.visibility = View.GONE
+            binding.pgSignup.visibility = View.GONE
         }
     }
 
