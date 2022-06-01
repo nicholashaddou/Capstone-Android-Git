@@ -11,6 +11,7 @@
     <string name="description_slide">Slide 1</string>
     <string name="description_spotlight">spotlight</string>
     <string name="description_course">Course</string>
+    <string name="description_logo">Logo GameLab</string>
 
     <string name="welcome_info">GameLab adalah aplikasi xxxxxxxx yang telah mendapatkan lisensi dari Kemendikbud untuk mengadakan pelatihan atau kursus tentang komputer Akuntansi sekaligus menyediakan aplikasi untuk dipergunakan sebagaimana mestinya dengan cara berlangganan. Anda mendapatkan course Accounting, Anda pun mendapatkan aplikasinya.</string>
     <string name="register_or_login">Resgister sekarang atau log in.</string>
@@ -35,7 +36,6 @@
     <string name="requires_password">Password harus diisi</string>
     <string name="password_error">Password kurang dari 6 karakter</string>
     <string name="sign_in">Sign in</string>
-
 
     <string name="button_register">Register</string>
     <string name="button_login">Log in</string>
