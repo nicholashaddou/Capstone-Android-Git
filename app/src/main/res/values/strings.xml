@@ -52,5 +52,25 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="sudah_memiliki_akun">Sudah memiliki akun?</string>
+    
+    //String pada User Profile
+    <string name="back_home">Beranda</string>
+    <string name="user_avatar">Avatar Profile</string>
+    <string name="user_full_name">Nama Lengka</string>
+    <string name="user_username">Username</string>
+    <string name="user_course_ID">ID Course</string>
+    <string name="user_email">Alamat E-mail</string>
+    <string name="user_phone">Nomor Telepon</string>
+    <string name="user_address">Alamat Lengkap</string>
+    <string name="user_province">Provinsi</string>
+    <string name="user_city">Kota/Kabupaten</string>
+    <string name="user_course_package">Paket Course Saat ini</string>
+    <string name="user_content_tab_detail">Informasi pribadi</string>
+    <string name="user_logout">Keluar</string>
+    <string name="user_detail_profile">Detail Profile</string>
+    <string name="user_logout_detail">Anda telah keluar dari GameLab</string>
+
+    //String Support
+    <string name="fab_support">Anda telah menghubungi Technical Support</string>
 
 </resources>
