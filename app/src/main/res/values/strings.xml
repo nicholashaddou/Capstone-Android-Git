@@ -53,4 +53,9 @@
     <string name="title_notifications">Notifications</string>
     <string name="sudah_memiliki_akun">Sudah memiliki akun?</string>
 
+    //String untuk courses
+    <string name="advanced_c">Advanced C# untuk Game Development</string>
+    <string name="lanjutan_class">Lanjutan class</string>
+    <string name="durasi_9_menit">Durasi: 9 menit</string>
+
 </resources>
