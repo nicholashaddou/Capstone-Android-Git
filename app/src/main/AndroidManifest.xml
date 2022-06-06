@@ -16,6 +16,9 @@
         android:theme="@style/Theme.PlayLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.course.CourseActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.dashboard.profile.UserProfileActivity"
             android:exported="false" />
         <activity
