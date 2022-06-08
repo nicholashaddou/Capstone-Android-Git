@@ -18,6 +18,8 @@
         <activity
             android:name=".ui.course.CourseActivity"
             android:exported="true" />
+        <activity android:name=".ui.course.coursedetail.CourseDetailActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.dashboard.profile.UserProfileActivity"
             android:exported="false" />
