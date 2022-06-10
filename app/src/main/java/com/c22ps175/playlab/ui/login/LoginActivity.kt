@@ -19,6 +19,7 @@ import com.c22ps175.playlab.ui.main.MainActivity
 import com.c22ps175.playlab.R
 import com.c22ps175.playlab.databinding.ActivityLoginBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
+import com.c22ps175.playlab.ui.dashboard.DashboardActivity
 import com.c22ps175.playlab.ui.model.UserModel
 import com.c22ps175.playlab.ui.model.UserPreference
 
@@ -57,6 +58,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+
+    //Masih ada eror, user selalu dihitung sudah log in, akan coba fix nanti
     private fun setupViewModel() {
         loginViewModel = ViewModelProvider(
             this,
@@ -65,42 +68,18 @@ class LoginActivity : AppCompatActivity() {
 
         loginViewModel.getUser().observe(this) { user ->
             this.user = user
+            if (this.user.isLogin) {
+                startActivity(Intent(this@LoginActivity, DashboardActivity::class.java))
+            }
         }
+
     }
 
     private fun setupAction() {
         binding.loginButton.setOnClickListener {
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
-            when {
-                email.isEmpty() -> {
-                    binding.emailEditTextLayout.error = "Masukkan email"
-                }
-                password.isEmpty() -> {
-                    binding.passwordEditTextLayout.error = "Masukkan password"
-                }
-                email != user.email -> {
-                    binding.emailEditTextLayout.error = "Email tidak sesuai"
-                }
-                password != user.password -> {
-                    binding.passwordEditTextLayout.error = "Password tidak sesuai"
-                }
-                else -> {
-                    loginViewModel.login()
-                    AlertDialog.Builder(this).apply {
-                        setTitle("Yeah!")
-                        setMessage("Anda berhasil login. Sudah tidak sabar untuk belajar ya?")
-                        setPositiveButton("Lanjut") { _, _ ->
-                            val intent = Intent(context, MainActivity::class.java)
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                            startActivity(intent)
-                            finish()
-                        }
-                        create()
-                        show()
-                    }
-                }
-            }
+            loginViewModel.loginUser(this,email,password)
         }
     }
 

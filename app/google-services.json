@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "153874919832",
+    "project_id": "trial---ml-capst",
+    "storage_bucket": "trial---ml-capst.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153874919832:android:4b2de018335c3d5f2efbed",
+        "android_client_info": {
+          "package_name": "com.gamelab.chatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153874919832-ilpfcv31toenqndfueran7dna1jvq896.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBavuAd9GXL5AdjqaQBsHdusPIi8fcHetc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153874919832-ilpfcv31toenqndfueran7dna1jvq896.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

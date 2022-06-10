@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.c22ps175.playlab.ui.dashboard.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_bookmark"
+        android:name="com.c22ps175.playlab.ui.dashboard.ui.bookmark.BookmarkFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_bookmark" />
 </navigation>
