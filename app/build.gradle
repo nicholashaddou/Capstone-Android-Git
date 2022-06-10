@@ -36,7 +36,12 @@ android {
     buildFeatures {
         viewBinding true
     }
-    
+
+    aaptOptions{
+        noCompress "tflite"
+        noCompress "lite"
+    }
+
 }
 
 dependencies {
@@ -86,4 +91,7 @@ dependencies {
     //Dependency untuk exoplayer
     implementation 'com.google.android.exoplayer:exoplayer-core:2.17.1'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.17.1'
+
+    //Dependency TFLite
+    //implementation 'org.tensorflow:tensorflow-lite:0.1.100'
 }

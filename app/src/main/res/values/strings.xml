@@ -36,6 +36,8 @@
     <string name="requires_password">Password harus diisi</string>
     <string name="password_error">Password kurang dari 6 karakter</string>
     <string name="sign_in">Sign in</string>
+    <string name="login_failed">Login gagal</string>
+    <string name="wrong_credentials">Data Salah</string>
 
     <string name="button_register">Register</string>
     <string name="button_login">Log in</string>

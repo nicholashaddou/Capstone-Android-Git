@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.c22ps175.playlab.api.ApiConfig
-import com.c22ps175.playlab.database.response.ResponseSementara
+import com.c22ps175.playlab.database.response.RegisterResponse
 import com.c22ps175.playlab.ui.model.UserModel
 import com.c22ps175.playlab.ui.model.UserPreference
 import kotlinx.coroutines.launch
@@ -14,7 +14,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class SignupViewModel(private val pref: UserPreference) : ViewModel() {
+class SignupViewModel() : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading : LiveData<Boolean> = _isLoading
 
@@ -84,10 +84,10 @@ class SignupViewModel(private val pref: UserPreference) : ViewModel() {
         if (formValidation(name,pass,email)){
             val client = ApiConfig.getApiService().postRegister(name,email,pass)
             _isLoading.value = true
-            client.enqueue(object : Callback<ResponseSementara> {
+            client.enqueue(object : Callback<RegisterResponse> {
                 override fun onResponse(
-                    call: Call<ResponseSementara>,
-                    response: Response<ResponseSementara>
+                    call: Call<RegisterResponse>,
+                    response: Response<RegisterResponse>
                 ) {
 
                     val responseBody = response.body()
@@ -106,7 +106,7 @@ class SignupViewModel(private val pref: UserPreference) : ViewModel() {
                     }
                 }
 
-                override fun onFailure(call: Call<ResponseSementara>, t: Throwable) {
+                override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
                     _isLoading.value = true
                     _apiResponse.value = t.message
                 }
@@ -114,11 +114,6 @@ class SignupViewModel(private val pref: UserPreference) : ViewModel() {
         }
     }
 
-    fun saveUser(user: UserModel) {
-        viewModelScope.launch {
-            pref.saveUser(user)
-        }
-    }
 }
 
 private operator fun String.not(): Boolean {
