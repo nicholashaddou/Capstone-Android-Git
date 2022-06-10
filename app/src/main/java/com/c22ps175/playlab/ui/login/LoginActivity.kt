@@ -19,6 +19,7 @@ import com.c22ps175.playlab.ui.main.MainActivity
 import com.c22ps175.playlab.R
 import com.c22ps175.playlab.databinding.ActivityLoginBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
+import com.c22ps175.playlab.ui.dashboard.DashboardActivity
 import com.c22ps175.playlab.ui.model.UserModel
 import com.c22ps175.playlab.ui.model.UserPreference
 
@@ -57,6 +58,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+
+    //Masih ada eror, user selalu dihitung sudah log in, akan coba fix nanti
     private fun setupViewModel() {
         loginViewModel = ViewModelProvider(
             this,
@@ -65,7 +68,11 @@ class LoginActivity : AppCompatActivity() {
 
         loginViewModel.getUser().observe(this) { user ->
             this.user = user
+            if (this.user.isLogin) {
+                startActivity(Intent(this@LoginActivity, DashboardActivity::class.java))
+            }
         }
+
     }
 
     private fun setupAction() {
