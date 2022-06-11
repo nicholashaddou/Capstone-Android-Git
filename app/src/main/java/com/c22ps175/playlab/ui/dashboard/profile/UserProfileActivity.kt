@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.c22ps175.playlab.R
@@ -26,7 +27,6 @@ class UserProfileActivity : AppCompatActivity() {
     private lateinit var bindingUserProfile: ActivityUserProfileBinding
     private lateinit var userProfileViewModel: UserProfileViewModel
 
-
     @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +35,15 @@ class UserProfileActivity : AppCompatActivity() {
 
         supportActionBar?.title = resources.getString(R.string.user_detail_profile)
 
-        val dataGameLabUser = intent.getParcelableExtra<UserGameLabData>(EXTRA_USER) as UserGameLabData
-
         setupViewModel()
+
+        // Mematikan dahulu fungsi loading
+        loadingOff()
+
+        /*
+        Untuk penerapan pada data API
+
+        val dataGameLabUser = intent.getParcelableExtra<UserGameLabData>(EXTRA_USER) as UserGameLabData
 
         Glide.with(this)
             .load(dataGameLabUser.photo)
@@ -56,13 +62,37 @@ class UserProfileActivity : AppCompatActivity() {
         bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCityUser.text = dataGameLabUser.city
         bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCoursePackageUser.text = dataGameLabUser.packagecourse
 
+         */
+
+        // Data Dummy sementara
+
+        Glide.with(this)
+            .load(resources.getString(R.string.dummy_data_avatar))
+            .circleCrop()
+            .into(bindingUserProfile.includeHeaderDetail.userDetailAvatar)
+        bindingUserProfile.includeHeaderDetail.userDetailFullName.text = resources.getString(R.string.dummy_data_name)
+        bindingUserProfile.includeHeaderDetail.userDetailUsername.text = resources.getString(R.string.dummy_data_username)
+
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionUsernameUser.text = resources.getString(R.string.dummy_data_username)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionFullNameUser.text = resources.getString(R.string.dummy_data_name)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionIDCourseUser.text = resources.getString(R.string.dummy_data_idcourse)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionEmailUser.text = resources.getString(R.string.dummy_data_email)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionPhoneUser.text = resources.getString(R.string.dummy_data_phone)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionFullAddressUser.text = resources.getString(R.string.dummy_data_address)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionProvinceUser.text = resources.getString(R.string.dummy_data_province)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCityUser.text = resources.getString(R.string.dummy_data_city)
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCoursePackageUser.text = resources.getString(R.string.dummy_data_packagecourse)
+
         val btnLogout: TextView = findViewById(R.id.user_logout)
-        val btnSupport: Button = findViewById(R.id.fab_support)
 
         btnLogout.setOnClickListener {
             userProfileViewModel.logout()
             Toast.makeText(this, resources.getString(R.string.user_logout_detail), Toast.LENGTH_SHORT).show()
         }
+
+
+
+        val btnSupport: FloatingActionButton = findViewById(R.id.fab_support)
 
         btnSupport.setOnClickListener {
             val fab: View = findViewById(R.id.fab_support)
@@ -72,6 +102,15 @@ class UserProfileActivity : AppCompatActivity() {
                     .show()
             }
             Toast.makeText(this, resources.getString(R.string.fab_support), Toast.LENGTH_SHORT).show()
+        }
+
+
+    }
+
+    // Mematikan loading dahulu sementara sebagai dummy
+    private fun loadingOff() {
+        bindingUserProfile.apply {
+            progressBarDetail.visibility = View.GONE
         }
     }
 
