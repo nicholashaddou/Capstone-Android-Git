@@ -16,49 +16,48 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="165dp"
+        android:layout_height="200dp"
         android:background="@color/capstone_secondary_80">
 
         <ImageView
             android:id="@+id/user_detail_avatar"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
             android:transitionName="@string/user_avatar"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.085"
             tools:ignore="ContentDescription"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/user_detail_full_name"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:text="@string/user_full_name"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="center"
+            android:textColor="#26C6DA"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="@id/user_detail_avatar"
+            card_view:layout_constraintStart_toStartOf="@id/user_detail_avatar"
             card_view:layout_constraintTop_toBottomOf="@id/user_detail_avatar" />
 
         <TextView
             android:id="@+id/user_detail_username"
-            style="@style/TextContentDetail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
             android:text="@string/user_username"
             android:textAlignment="center"
-            android:textSize="14sp"
+            android:textColor="#BBDEFB"
+            android:textSize="18sp"
             card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="@id/user_detail_full_name"
-            card_view:layout_constraintStart_toStartOf="@id/user_detail_full_name"
+            card_view:layout_constraintEnd_toEndOf="@id/user_detail_avatar"
+            card_view:layout_constraintStart_toStartOf="@id/user_detail_avatar"
             card_view:layout_constraintTop_toBottomOf="@id/user_detail_full_name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
