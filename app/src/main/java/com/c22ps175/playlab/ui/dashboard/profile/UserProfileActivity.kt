@@ -2,6 +2,7 @@ package com.c22ps175.playlab.ui.dashboard.profile
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,7 +19,9 @@ import com.c22ps175.playlab.R
 import com.c22ps175.playlab.data.UserGameLabData
 import com.c22ps175.playlab.databinding.ActivityUserProfileBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
+import com.c22ps175.playlab.ui.main.MainActivity
 import com.c22ps175.playlab.ui.model.UserPreference
+import com.c22ps175.playlab.ui.welcome.WelcomeActivity
 import com.google.android.material.snackbar.Snackbar
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
@@ -43,24 +46,24 @@ class UserProfileActivity : AppCompatActivity() {
         /*
         Untuk penerapan pada data API
 
-        val dataGameLabUser = intent.getParcelableExtra<UserGameLabData>(EXTRA_USER) as UserGameLabData
+        val dataGameLabUser = intent.getParcelableExtra<UserGameLabData>(EXTRA_USER)// as UserGameLabData
 
         Glide.with(this)
-            .load(dataGameLabUser.photo)
+            .load(dataGameLabUser?.photo)
             .circleCrop()
             .into(bindingUserProfile.includeHeaderDetail.userDetailAvatar)
-        bindingUserProfile.includeHeaderDetail.userDetailFullName.text = dataGameLabUser.name
-        bindingUserProfile.includeHeaderDetail.userDetailUsername.text = dataGameLabUser.username
+        bindingUserProfile.includeHeaderDetail.userDetailFullName.text = dataGameLabUser?.name
+        bindingUserProfile.includeHeaderDetail.userDetailUsername.text = dataGameLabUser?.username
 
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionUsernameUser.text = dataGameLabUser.username
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionFullNameUser.text = dataGameLabUser.name
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionIDCourseUser.text = dataGameLabUser.idcourse
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionEmailUser.text = dataGameLabUser.email
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionPhoneUser.text = dataGameLabUser.phone
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionFullAddressUser.text = dataGameLabUser.address
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionProvinceUser.text = dataGameLabUser.province
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCityUser.text = dataGameLabUser.city
-        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCoursePackageUser.text = dataGameLabUser.packagecourse
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionUsernameUser.text = dataGameLabUser?.username
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionFullNameUser.text = dataGameLabUser?.name
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionIDCourseUser.text = dataGameLabUser?.idcourse
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionEmailUser.text = dataGameLabUser?.email
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionPhoneUser.text = dataGameLabUser?.phone
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionFullAddressUser.text = dataGameLabUser?.address
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionProvinceUser.text = dataGameLabUser?.province
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCityUser.text = dataGameLabUser?.city
+        bindingUserProfile.includeDescriptionDetail.userDetailDescriptionCoursePackageUser.text = dataGameLabUser?.packagecourse
 
          */
 
@@ -88,6 +91,8 @@ class UserProfileActivity : AppCompatActivity() {
         btnLogout.setOnClickListener {
             userProfileViewModel.logout()
             Toast.makeText(this, resources.getString(R.string.user_logout_detail), Toast.LENGTH_SHORT).show()
+            val intentLogout = Intent(this@UserProfileActivity, MainActivity::class.java)
+            startActivity(intentLogout)
         }
 
 
