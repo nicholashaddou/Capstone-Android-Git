@@ -101,4 +101,13 @@
     <string name="dummy_data_city">Los Angeles</string>
     <string name="dummy_data_packagecourse">Paket Lite</string>
 
+    //String untuk dashboard
+    <string name="hello_user">Hello User!</string>
+    <string name="advanced_c_sharp">Advanced C#</string>
+    <string name="ini_ada_beberapa_rekomendasi_untukmu">Ini ada beberapa rekomendasi untukmu..</string>
+    <string name="siap_untuk_belajar">Siap untuk belajar?</string>
+    <string name="c_untuk_advanced">C# untuk Advanced</string>
+    <string name="_15_jam">15 jam</string>
+    <string name="kembali">Kembali</string>
+
 </resources>
