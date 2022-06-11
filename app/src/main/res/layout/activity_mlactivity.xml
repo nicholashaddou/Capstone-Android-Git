@@ -6,4 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".ui.tesml.MLActivity">
 
+    <TextView
+        android:id="@+id/textViewML"
+        android:layout_width="352dp"
+        android:layout_height="199dp"
+        android:text="temp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewML"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:text="send"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewML"
+        app:layout_constraintVertical_bias="0.508" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,15 @@ class SupportAgentActivity : AppCompatActivity() {
         binding = ActivitySupportAgentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = "Support Agent"
+
+        binding.supprotAgentSendButton.setOnClickListener {
+
+            val friendlyMessage = binding.supportAgentMessageEditText.text.toString()
+
+        }
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater

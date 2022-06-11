@@ -9,21 +9,25 @@
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/drawable/buttonshape.xml" value="0.2015" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.333" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/drawable/round_corners.xml" value="0.2765" />
+        <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/drawable/rounded_message_blue.xml" value="0.3055" />
+        <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/drawable/rounded_message_yellow.xml" value="0.196" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_course.xml" value="0.36666666666666664" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_course_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_course_list.xml" value="0.1" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_dashboard.xml" value="0.358695652173913" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_main.xml" value="0.2807971014492754" />
-        <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_mlactivity.xml" value="0.1" />
+        <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_mlactivity.xml" value="0.18" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_register.xml" value="0.18802083333333333" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_signup.xml" value="0.2807971014492754" />
+        <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_support_agent.xml" value="0.2558876811594203" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_user_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/fragment_bookmark.xml" value="0.18802083333333333" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/fragment_dashboard.xml" value="0.358695652173913" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/fragment_notifications.xml" value="0.358695652173913" />
+        <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/item_message_chatbot.xml" value="0.36666666666666664" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/item_row.xml" value="0.358695652173913" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/item_row_course_list.xml" value="0.31929347826086957" />
         <entry key="..\:/Bangkit Capstone project/android app/Capstone-Android-Git/app/src/main/res/layout/user_profile_description.xml" value="0.18802083333333333" />

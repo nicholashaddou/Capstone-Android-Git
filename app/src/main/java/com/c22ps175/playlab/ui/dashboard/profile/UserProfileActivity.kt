@@ -21,6 +21,8 @@ import com.c22ps175.playlab.databinding.ActivityUserProfileBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
 import com.c22ps175.playlab.ui.main.MainActivity
 import com.c22ps175.playlab.ui.model.UserPreference
+import com.c22ps175.playlab.ui.support.SupportAgentActivity
+import com.c22ps175.playlab.ui.tesml.MLActivity
 import com.c22ps175.playlab.ui.welcome.WelcomeActivity
 import com.google.android.material.snackbar.Snackbar
 
