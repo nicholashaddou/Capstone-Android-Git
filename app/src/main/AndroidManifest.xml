@@ -16,6 +16,9 @@
         android:theme="@style/Theme.PlayLab"
         tools:targetApi="31">
         <activity
+            android:name=".ui.support.SupportAgentActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.tesml.MLActivity"
             android:exported="false" />
         <activity
