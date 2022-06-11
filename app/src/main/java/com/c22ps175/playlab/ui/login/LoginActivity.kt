@@ -58,12 +58,11 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-
     //Masih ada eror, user selalu dihitung sudah log in, akan coba fix nanti
     private fun setupViewModel() {
         loginViewModel = ViewModelProvider(
             this,
-            ViewModelFactory(UserPreference.getInstance(dataStore))
+            ViewModelFactory(UserPreference.getInstance(dataStore), this)
         )[LoginViewModel::class.java]
 
         loginViewModel.getUser().observe(this) { user ->

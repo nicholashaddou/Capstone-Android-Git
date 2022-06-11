@@ -1,18 +1,28 @@
 package com.c22ps175.playlab.ui.dashboard.profile
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.c22ps175.playlab.R
 import com.c22ps175.playlab.data.UserGameLabData
 import com.c22ps175.playlab.databinding.ActivityUserProfileBinding
+import com.c22ps175.playlab.ui.ViewModelFactory
+import com.c22ps175.playlab.ui.model.UserPreference
 
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 class UserProfileActivity : AppCompatActivity() {
 
     private lateinit var bindingUserProfile: ActivityUserProfileBinding
+    private lateinit var userProfileViewModel: UserProfileViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +32,8 @@ class UserProfileActivity : AppCompatActivity() {
         supportActionBar?.title = resources.getString(R.string.user_detail_profile)
 
         val dataGameLabUser = intent.getParcelableExtra<UserGameLabData>(EXTRA_USER) as UserGameLabData
+
+        setupViewModel()
 
         Glide.with(this)
             .load(dataGameLabUser.photo)
@@ -44,12 +56,21 @@ class UserProfileActivity : AppCompatActivity() {
         val btnSupport: Button = findViewById(R.id.fab_support)
 
         btnLogout.setOnClickListener {
+            userProfileViewModel.logout()
             Toast.makeText(this, resources.getString(R.string.user_logout_detail), Toast.LENGTH_SHORT).show()
         }
 
         btnSupport.setOnClickListener {
+
             Toast.makeText(this, resources.getString(R.string.fab_support), Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun setupViewModel(){
+        userProfileViewModel = ViewModelProvider(
+            this,
+            ViewModelFactory(UserPreference.getInstance(dataStore), this)
+        )[UserProfileViewModel::class.java]
     }
 
     companion object {

@@ -35,6 +35,7 @@ android {
     
     buildFeatures {
         viewBinding true
+        mlModelBinding true
     }
 
     aaptOptions{
@@ -50,6 +51,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.1.2'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -93,5 +97,18 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.17.1'
 
     //Dependency TFLite
-    //implementation 'org.tensorflow:tensorflow-lite:0.1.100'
+    implementation 'org.tensorflow:tensorflow-lite:2.8.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.8.0'
+    //implementation 'org.tensorflow:tensorflow-lite-support:2.8.0'
+
+    //Dependency ml interpreter
+    //implementation 'com.google.firebase:firebase-ml-model-interpreter:'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.0.1')
+
+    // Declare the dependency for the Firebase ML model downloader library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-ml-modeldownloader-ktx'
+
 }
