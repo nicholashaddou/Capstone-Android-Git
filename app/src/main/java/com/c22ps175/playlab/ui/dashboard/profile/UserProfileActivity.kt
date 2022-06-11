@@ -1,8 +1,10 @@
 package com.c22ps175.playlab.ui.dashboard.profile
 
+import android.annotation.SuppressLint
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -16,6 +18,7 @@ import com.c22ps175.playlab.data.UserGameLabData
 import com.c22ps175.playlab.databinding.ActivityUserProfileBinding
 import com.c22ps175.playlab.ui.ViewModelFactory
 import com.c22ps175.playlab.ui.model.UserPreference
+import com.google.android.material.snackbar.Snackbar
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 class UserProfileActivity : AppCompatActivity() {
@@ -24,6 +27,7 @@ class UserProfileActivity : AppCompatActivity() {
     private lateinit var userProfileViewModel: UserProfileViewModel
 
 
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingUserProfile = ActivityUserProfileBinding.inflate(layoutInflater)
@@ -61,7 +65,12 @@ class UserProfileActivity : AppCompatActivity() {
         }
 
         btnSupport.setOnClickListener {
-
+            val fab: View = findViewById(R.id.fab_support)
+            fab.setOnClickListener { view ->
+                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null)
+                    .show()
+            }
             Toast.makeText(this, resources.getString(R.string.fab_support), Toast.LENGTH_SHORT).show()
         }
     }
