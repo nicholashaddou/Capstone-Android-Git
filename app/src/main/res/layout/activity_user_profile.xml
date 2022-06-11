@@ -40,8 +40,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/user_logout"
+            android:textStyle="bold"
+            android:textSize="16sp"
             app:drawableLeftCompat="@drawable/ic_baseline_logout_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,9 +57,11 @@
             android:layout_margin="16dp"
             android:contentDescription="@string/back_home"
             app:srcCompat="@drawable/ic_baseline_support_agent_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints,ImageContrastCheck"
-            tools:layout_editor_absoluteX="317dp"
-            tools:layout_editor_absoluteY="576dp" />
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="610dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
