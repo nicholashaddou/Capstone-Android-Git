@@ -17,7 +17,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="165dp"
-        android:background="@color/capstone_primary_30">
+        android:background="@color/capstone_secondary_80">
 
         <ImageView
             android:id="@+id/user_detail_avatar"
