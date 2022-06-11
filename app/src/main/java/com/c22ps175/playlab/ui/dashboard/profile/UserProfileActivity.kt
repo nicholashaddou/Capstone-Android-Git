@@ -102,6 +102,9 @@ class UserProfileActivity : AppCompatActivity() {
         btnSupport.setOnClickListener {
             val fab: View = findViewById(R.id.fab_support)
             fab.setOnClickListener { view ->
+                val moveIntent = Intent(this@UserProfileActivity, SupportAgentActivity::class.java)
+                startActivity(moveIntent)
+
                 Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
                     .setAction("Action", null)
                     .show()
