@@ -58,7 +58,7 @@
     //String pada User Profile
     <string name="back_home">Beranda</string>
     <string name="user_avatar">Avatar Profile</string>
-    <string name="user_full_name">Nama Lengka</string>
+    <string name="user_full_name">Nama Lengkap</string>
     <string name="user_username">Username</string>
     <string name="user_course_ID">ID Course</string>
     <string name="user_email">Alamat E-mail</string>
@@ -88,5 +88,17 @@
     <string name="masuk_course_detail">Masuk</string>
     <string name="bookmark">Bookmark</string>
     <string name="profile">Profile</string>
+
+    //String dummy data user profile. Bisa dihapus jika sudah terkoneksi dengan API
+    <string name="dummy_data_username">nicolastse</string>
+    <string name="dummy_data_name">Nicolas Tse</string>
+    <string name="dummy_data_idcourse">ML-0718771</string>
+    <string name="dummy_data_avatar">https://avatars.githubusercontent.com/u/2734357?v=4</string>
+    <string name="dummy_data_email">nicolas_tse@gmail.com</string>
+    <string name="dummy_data_phone">08155555555</string>
+    <string name="dummy_data_address">Jl. Kebahagian Sejahtera Selamanya No. 88 Gg. Terminator Jilid II</string>
+    <string name="dummy_data_province">Birmingham</string>
+    <string name="dummy_data_city">Los Angeles</string>
+    <string name="dummy_data_packagecourse">Paket Lite</string>
 
 </resources>
