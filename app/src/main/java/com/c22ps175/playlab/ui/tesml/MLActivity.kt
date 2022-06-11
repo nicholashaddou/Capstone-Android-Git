@@ -12,9 +12,9 @@ class MLActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mlactivity)
-
+//Tes model ML
         val model = Linear.newInstance(this)
-        var byteBuffer : ByteBuffer = ByteBuffer.allocateDirect(100)
+        val byteBuffer : ByteBuffer = ByteBuffer.allocateDirect(100)
 
 // Creates inputs for reference.
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 20), DataType.FLOAT32)
