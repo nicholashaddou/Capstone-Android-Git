@@ -15,6 +15,8 @@ import com.c22ps175.playlab.R
 import com.c22ps175.playlab.data.UserGameLabData
 import com.c22ps175.playlab.database.response.MessageSupport
 import com.c22ps175.playlab.databinding.ActivitySupportAgentBinding
+import com.c22ps175.playlab.ui.dashboard.DashboardActivity
+import com.c22ps175.playlab.ui.dashboard.profile.UserProfileActivity
 import com.c22ps175.playlab.ui.login.LoginActivity
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
@@ -39,8 +41,6 @@ class SupportAgentActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.title = resources.getString(R.string.support_agent_activity)
-
-        val dataGameLabUser = intent.getParcelableExtra<UserGameLabData>(EXTRA_USER) as UserGameLabData
 
         auth = Firebase.auth
         val firebaseUser = auth.currentUser
@@ -103,6 +103,7 @@ class SupportAgentActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.profile -> {
+                startActivity(Intent(this@SupportAgentActivity, UserProfileActivity::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)
