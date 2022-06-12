@@ -1,8 +1,11 @@
 package com.c22ps175.playlab.ui.course
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.c22ps175.playlab.databinding.ActivityCourseBinding
+import com.c22ps175.playlab.ui.dashboard.DashboardActivity
+import com.c22ps175.playlab.ui.dashboard.ui.dashboard.DashboardFragment
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
 
@@ -30,5 +33,10 @@ class CourseActivity : AppCompatActivity() {
         player.setMediaItem(mediaItem)
         player.addMediaItem(anotherMediaItem)
         player.prepare()
+
+        viewBinding.buttonBackToDashboard.setOnClickListener {
+            val intentToDashboard = Intent(this, DashboardActivity::class.java)
+            startActivity(intentToDashboard)
+        }
     }
 }

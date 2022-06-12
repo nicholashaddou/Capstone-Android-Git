@@ -5,6 +5,7 @@ import androidx.lifecycle.*
 import com.c22ps175.playlab.R
 import com.c22ps175.playlab.api.ApiConfig
 import com.c22ps175.playlab.database.response.LoginResponse
+import com.c22ps175.playlab.database.response.LoginResponseNew
 import com.c22ps175.playlab.ui.model.UserModel
 import com.c22ps175.playlab.ui.model.UserPreference
 import kotlinx.coroutines.launch
@@ -99,7 +100,7 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel() {
                             )
                             login(user)
                             _isLoading.value = false
-                            _apiResponse.value = responseBody.message
+                            //_apiResponse.value = responseBody.message
                         } else {
                             _isLoading.value = false
                             _apiResponse.value = context.getString(R.string.login_failed)

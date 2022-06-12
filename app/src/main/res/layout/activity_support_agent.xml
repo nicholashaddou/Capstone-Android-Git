@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.support.SupportAgentActivity">
+
+<LinearLayout
+    android:id="@+id/support_agent_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/cardview_dark_background"
+    android:orientation="horizontal"
+    android:paddingHorizontal="10dp">
+
+    <EditText
+        android:id="@+id/support_agent_message_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_shadow"
+        android:hint="@string/support_text_message"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/supprot_agent_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="false"
+        android:src="@drawable/ic_paper_plane" />
+
+</LinearLayout>
+
+<ProgressBar
+    android:id="@+id/supprot_agent_progressBar"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/supprot_agent_message_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/support_agent_linearLayout"
+    android:background="@android:color/white"
+    tools:listitem="@layout/item_message_chatbot"/>
+</RelativeLayout>

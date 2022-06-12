@@ -7,6 +7,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:153874919832:android:3a99a9f9dd65b38f2efbed",
+        "android_client_info": {
+          "package_name": "com.c22ps175.playlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153874919832-64hv3cjuk2799stpjuia1ut7uifja1av.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.c22ps175.playlab",
+            "certificate_hash": "235a209c04834c09258b905d8cd69a8fdcb54208"
+          }
+        },
+        {
+          "client_id": "153874919832-ilpfcv31toenqndfueran7dna1jvq896.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBavuAd9GXL5AdjqaQBsHdusPIi8fcHetc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153874919832-ilpfcv31toenqndfueran7dna1jvq896.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:153874919832:android:4b2de018335c3d5f2efbed",
         "android_client_info": {
           "package_name": "com.gamelab.chatbot"
