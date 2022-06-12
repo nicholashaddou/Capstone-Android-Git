@@ -74,6 +74,10 @@
 
     //String Support
     <string name="fab_support">Anda telah menghubungi Technical Support</string>
+    <string name="support_text_message">Say something...</string>
+    <string name="support_send_success">Berhasil terkirim</string>
+    <string name="support_send_error">Gagal terkirim</string>
+    <string name="support_agent_activity">Support Agent</string>
 
     //String untuk courses
     <string name="advanced_c">Advanced C# untuk Game Development</string>
@@ -109,6 +113,5 @@
     <string name="c_untuk_advanced">C# untuk Advanced</string>
     <string name="_15_jam">15 jam</string>
     <string name="kembali">Kembali</string>
-    <string name="say_something">Say something...</string>
 
 </resources>
