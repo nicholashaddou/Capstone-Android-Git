@@ -114,4 +114,9 @@
     <string name="_15_jam">15 jam</string>
     <string name="kembali">Kembali</string>
 
+    //String untuk Google Sign
+    <string name="sign_out">Sign Out</string>
+    <string name="send_success">Berhasil terkirim</string>
+    <string name="send_error">Gagal terkirim</string>
+
 </resources>
