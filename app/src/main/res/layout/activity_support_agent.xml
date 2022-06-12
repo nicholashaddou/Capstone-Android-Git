@@ -10,7 +10,7 @@ tools:context=".ui.support.SupportAgentActivity">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:background="@color/cardview_dark_background"
+    android:background="@color/firebase_gray"
     android:orientation="horizontal"
     android:paddingHorizontal="10dp">
 
@@ -22,7 +22,7 @@ tools:context=".ui.support.SupportAgentActivity">
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:background="@drawable/edit_text_shadow"
-        android:hint="@string/say_something"
+        android:hint="@string/support_text_message"
         android:inputType="text"
         android:minHeight="48dp"
         android:padding="10dp" />
