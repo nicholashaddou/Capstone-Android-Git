@@ -10,7 +10,7 @@ tools:context=".ui.support.SupportAgentActivity">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:background="@color/firebase_gray"
+    android:background="@color/cardview_dark_background"
     android:orientation="horizontal"
     android:paddingHorizontal="10dp">
 

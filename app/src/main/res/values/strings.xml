@@ -118,5 +118,11 @@
     <string name="sign_out">Sign Out</string>
     <string name="send_success">Berhasil terkirim</string>
     <string name="send_error">Gagal terkirim</string>
+    <string name="what_is_game_development">What is game development?</string>
+    <string name="artikel_15_menit_baca">Artikel, 15 menit baca</string>
+    <string name="penulis_nicholas_haddou">Penulis: Nicholas Haddou</string>
+    <string name="apa_itu_game_development">Apa itu game development?</string>
+    <string name="article_1">Sebuah game developer tidak harus menjadi seorang programmer, melainkan bisa juga menjadi seorang sound designer, atau bahkan seorang game tester. Pengembangan sebuah game dapat dilakukan oleh sebuah perusahaan besar, ataupun sebuah tim kecil, yang sering dikenal sebagain indie developer. Untuk terjun ke dunia pengembangan game, Anda tidak perlu bisa coding, tapi juga bisa berkecimpung dalam pembuatan asset.</string>
+    <string name="article_2">Jadi janganlah terintimidasi untuk terjun ke dunia game development, langkah pertama untuk mencapai apapun adalah dengan mencoba!</string>
 
 </resources>

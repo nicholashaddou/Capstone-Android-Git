@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.c22ps175.playlab.databinding.FragmentDashboardBinding
+import com.c22ps175.playlab.ui.course.article.ArticleActivity
 import com.c22ps175.playlab.ui.course.coursedetail.CourseDetailActivity
 import com.c22ps175.playlab.ui.login.LoginActivity
 
@@ -31,6 +32,10 @@ class DashboardFragment : Fragment() {
 
         _binding!!.buttonCourseCsharpDashboard.setOnClickListener {
             startActivity(Intent(activity, CourseDetailActivity::class.java))
+        }
+
+        _binding!!.buttonCourseOtherDashboard.setOnClickListener {
+            startActivity(Intent(activity, ArticleActivity::class.java))
         }
 
         return binding.root

@@ -1,5 +1,6 @@
 package com.c22ps175.playlab.ui.tesml
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,6 +18,7 @@ class MLActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMlactivityBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMlactivityBinding.inflate(layoutInflater)
@@ -26,12 +28,14 @@ class MLActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             var ed1 : EditText = binding.editText
-            var s1 : Float = binding.editText.toString().toFloat()
+            var s1 : Float = ed1.toString().toFloat()
+            val s2 : Float = ed1.toString().toFloat()
 
 //Tes model ML
             val model = Linear.newInstance(this)
-            val byteBuffer : ByteBuffer = ByteBuffer.allocateDirect(1*1)
+            val byteBuffer : ByteBuffer = ByteBuffer.allocateDirect(1*2)
             byteBuffer.putFloat(s1)
+            byteBuffer.putFloat(s2)
 
 
 // Creates inputs for reference.

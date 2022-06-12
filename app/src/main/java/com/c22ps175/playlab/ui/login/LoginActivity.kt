@@ -163,7 +163,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun setupAction() {
         binding.loginButton.setOnClickListener {
             val email = binding.emailEditText.text.toString()
